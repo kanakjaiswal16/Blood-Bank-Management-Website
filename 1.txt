@@ -1,0 +1,6 @@
+mysqli_connect();
+mysqli_query();
+mysqli_num_rows();
+my_sqli_error();
+password_hash($password,PASSWORD_DEFAULT);
+isset($_POST['submit])

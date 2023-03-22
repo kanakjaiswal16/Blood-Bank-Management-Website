@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(228, 90, 90); */
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul {
+    display: flex;
+    /* font-family: 'Baloo Bhai', cursive; */
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.slider {
+    overflow: hidden;
+    /* border: 2px solid red; */
+    height: 1200px;
+    width: 1515px;
+    /* border-radius: 10px; */
+    /* margin-left: 360px;
+    margin-top: 20px; */
+}
+
+.slides {
+    width: 500%;
+    height: 600px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1515px;
+    height: 500px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 1550px;
+    margin-top: -140px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+
+}
+
+.manual-btn:hover {
+    background-color: bisque;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+
+/* Automatic */
+
+.navigation-auto {
+    position: absolute;
+    width: 1200px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: yellowgreen;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: yellowgreen;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: yellowgreen;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: yellowgreen;
+}
+
+/* Table  */
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    color: rgb(247, 82, 82);
+    font-size: 2.8rem;
+    padding: 12px;
+    margin-top: -47%;
+    margin-left: 34%;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: 56%;
+    margin-top: -22%;
+    width: 43%;
+    font-size: 1.4em;
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+#contact h1{
+    /* margin-top: 50%; */
+    font-family: 'Bree Serif', serif;
+    color: rgb(247, 82, 82);
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    /* background: url('../contact.jpg') no-repeat center center/cover; */
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+.btn{
+    background-color: #0b0fe6;
+    color: white;
+    margin: 5px 233px;
+    padding: 6px;
+    border: 2px solid white;
+    border-radius: 64px;
+    font-size: 16px;
+    width: 166px;
+    height: 45px;
+    cursor: pointer;
+
+}
+.message{
+    color: #00B74A;
+    margin: auto 590px;
+}

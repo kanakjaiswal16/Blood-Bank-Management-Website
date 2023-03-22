@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    
+}
+.container{
+    text-align: center;
+background-color: #faf6f6;
+width: 50%;
+height: 680px;
+margin: 90px 658px;
+}
+.headline{
+    text-align: center;
+    color: red;
+    margin: 12px;
+    padding: 72px;
+  
+}
+input,textarea{
+
+    margin: 6px auto;
+    padding: 6px;
+    border: 2px solid double;
+    font-size: 12px;
+    border-radius: 7px;
+    display: block;
+    width: 256px;
+    height: 19px;
+  
+
+}
+.btn{
+    background-color: #0b0fe6;
+    color: white;
+    margin: 5px;
+    padding: 6px;
+    border: 2px solid white;
+    border-radius: 64px;
+    font-size: 16px;
+    width: 166px;
+    height: 45px;
+    cursor: pointer;
+  
+}
+.bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+img{
+
+    width: 147px;
+    margin: 228px
+}
+.bottom h1{
+    position: absolute;
+    bottom: 161px;
+    left: 173px;
+  
+}
+.container a{
+    display: block;
+   color: red;
+}
+
+.login{
+    background-color: #00B74A;
+}
+.second_box{
+    display: none;
+}
+
+.headline .message{
+    color: #00B74A;
+}
+
+.headline .success{
+    color: red;
+}
+.headline .message1{
+    color: red;
+}
+/* INSERT INTO `donor_details` (`id`, `name`, `age`, `weight`, `email`, `phone`, `date_signup`) VALUES ('1', 'kanak', '12', '34', 'kkdc2kmail.com', '23456789', current_timestamp()); */
+/* INSERT INTO `donor_login` (`id`, `password`) VALUES ('1', 'kanak7796'); */
